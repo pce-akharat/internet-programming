@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    div(style='text-align:center')
+        h4 #{message}
+        form(action = "/login" method = "POST")
+            input(name = "id" type = "text" required placeholder = "User ID")
+            br
+            br
+            input(name = "password" type = "password" required placeholder = "Password")
+            br
+            br
+            button(type = "Submit") Log in
+        p
+            a(href='/signup') Signup
